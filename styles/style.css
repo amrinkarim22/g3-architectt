@@ -164,10 +164,7 @@ main{
         color: #131313;
     }
     .banner-description{
-        font-size: 12px;
-       
-       
-       
+        font-size: 12px;   
     }
     .orange{
         max-width: 150px;
@@ -176,15 +173,21 @@ main{
         font-size: 15px;
         font-weight: 600;
         margin-bottom: 32px;
-
     }  
     .teams-img-container{
        
         grid-template-columns:1fr;
     }
-    .teams-content{
+    .teams-content, .facts-card-box{
         padding-right:20px;
         padding-left:20px;
+    }
+    .facts-card-box{
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 30px;
+        padding: 20px 10px;
     }
 }
 
