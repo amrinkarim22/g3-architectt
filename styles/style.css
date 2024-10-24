@@ -118,6 +118,7 @@ main{
     gap: 140px;
     
 }
+
 .features .first-header{
     border-left: 5px solid #FF900E;
     padding: 20px;
@@ -129,27 +130,34 @@ main{
     background: #fff;
     box-shadow: 0px 4px 30px 0px rgba(255, 144, 14, 0.10);
 }
+.feature-img img{
+    margin-left: 50px;
+    height: 90%;
+}
 .ten-years-badge{
     color: white;
     border-radius: 8px;
     background-color: #ff9822;
-    max-width: 200px;
-    height: 100px;
-    padding: 20px;
+    max-width: 340px;
+    height: 200px;
+    padding: 50px;
     text-align: center;
+    position: relative;
+    bottom: 150px;
+
 }
-.ten-years-badge h3{
-    font-size: 45px;
+.ten-years-badge h2{
+    font-size: 65px;
     font-weight: 700;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 40px;
 }
 .ten-years-badge p{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 0px;
     margin-bottom: 0px;
-
+   
 }
 /* facts section styles */
 .facts-title, .card-stats{
@@ -233,7 +241,7 @@ footer{
     header{
         padding: 10px;
     }
-    nav, .teams-container, .sponsors-img-container{
+    nav, .teams-container, .sponsors-img-container, .features{
         flex-direction: column;
     }
     .banner-title{
@@ -256,9 +264,28 @@ footer{
        
         grid-template-columns:1fr;
     }
+
+
     .teams-content,.facts-title, .facts-description, .facts-card-box{
         padding-right:20px;
         padding-left:20px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ten-years-badge{
+        margin-top: 20px;
+        max-width: 100px;
+        height: 50px;
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+    }
+    .ten-years-badge h2{
+        font-size: 30px;
+        margin-top: 0px;
+       
     }
     .facts-title{
         margin-bottom: 0px;
@@ -294,6 +321,8 @@ footer{
     .facts-title ,.facts-description{
         margin-left: 60px;
     }
+
+   
     .facts-card-box{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
